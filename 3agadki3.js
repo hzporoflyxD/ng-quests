@@ -38,7 +38,12 @@ const questions = [
         question: "- Это очень хорошо. Хотите подарок?",
         options: ["Да", "Не помню", "Нет"],
         answer: "Да"
-    }
+    },
+    {
+        question: "Нужно нажимать на верхнюю часть подарка, чтобы его открыть",
+        options: ["Далее"],
+        answer: "Далее"
+    },
 ];
 
 let currentQuestionIndex = 0;
