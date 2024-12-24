@@ -1,0 +1,156 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #25252b;
+    font-family: 'Arial', sans-serif;
+}
+
+
+.gift-container {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    position: absolute;
+    bottom: 20%;
+}
+
+
+
+
+.gift-container, .gift-box {
+    position: absolute;
+    height: 200px;
+    width: 300px;
+    background-color: cornflowerblue;
+    animation: Bounce 4s ease infinite;
+}
+
+
+@keyframes Bounce {
+    0%{
+        transform: translateY(-24px);
+    }
+    50%{
+        transform: translateY(0px);
+    }
+    100%{
+        transform: translateY(-24px);
+    }
+}
+
+.gift-box.active {
+    animation: none;
+}
+
+
+.gift-box::before{
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 200px;
+    background-color: antiquewhite;
+    left: 124px;
+}
+
+
+
+.gift-box::after{
+    content: '';
+    position: absolute;
+    width: 300px;
+    height: 200px;
+    box-shadow: inset 0 10px rgb(102, 100, 100);
+}
+
+
+
+.click {
+    position: absolute;
+    background-color: cornflowerblue;
+    width: 340px;
+    height: 90px;
+    top: -90px; 
+    left: -20px;
+    cursor: pointer;
+    z-index: 1;
+}
+
+
+
+.click.active {
+    transform: translateY(-240px);
+}
+
+
+
+.click::before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 90px;
+    background-color: antiquewhite;
+    left: 144px;
+    z-index: 2;
+}
+
+
+
+.click::after {
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 0;
+    border-bottom: 60px solid antiquewhite;
+    border-top: 60px solid antiquewhite;
+    border-left: 0px solid transparent;
+    border-right: 60px solid transparent;
+    transform: rotate(-90deg);
+    top: -92px;
+    left: 136px;
+    z-index: 3;
+}
+
+
+
+
+.text {
+    top: 0;
+    width: 200px;
+    height: 100px;
+    padding: 20px;
+    text-align: center;
+    font-size: 14px;
+    background-color: cornflowerblue;
+    color: antiquewhite;
+    border-radius: 20px;
+}
+
+
+
+.text.active {
+    z-index: -11;
+    transform: translateY(-220px);
+}
+
+
+
+
+
+button {
+    background-color: cornflowerblue;
+    color: antiquewhite;
+    border: none;
+    border-radius: 5px;
+    padding: 15px;
+    margin-top: 830px;
+    display: none;
+}
+
+
+button:hover {
+    background-color: antiquewhite;
+    color: cornflowerblue;
+    border: 2px solid cornflowerblue;
+    cursor: pointer;
+}

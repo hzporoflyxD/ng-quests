@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Змейка</title>
+  <link rel="stylesheet" href="snake.css">
+</head>
+<body>
+  <canvas id="gameCanvas"></canvas> 
+  <button id="daleeButton" class="game-button"
+   onclick="window.location.href='3agadki3.html'">Устали? Далее</button>
+   <button id="restartButton" onclick="location.reload()" class="hidden">Заново?</button>
+  <script src="snake.js"></script> 
+
+
+
+
+  <div id="overlay-before-game" class="overlay-before-game">
+    <div class="ib-bef-game">
+      <h1>Перед игрой</h1>
+    
+    <h2><strong>Процесс игры:</strong></h2>
+    <ul>
+        <li>Управление стрелочками.</li>
+        <li>Когда змейка врезается в стену, она выходит с противоположной стены.</li>
+        <li>Когда змейка кушает мандаринку, она возрастает на 1 пиксель.</li>
+        <li>Когда повышается уровень, скорость змейки возрастает.</li>
+        <li>С уровня hard змейке нельзя врезаться в саму себя, иначе проиграете.</li>
+    </ul>
+
+    <p>Начальная скорость: 2</p>
+
+    <p>Чтобы считать игру пройденной, нужно достичь уровня "пройдено".</p>
+
+    <h2>Интерфейс:</h2>
+    <ul>
+        <li>В левом верхнем углу поля будет ваш съеденные мандаринки<br> за текущую игру.</li>  
+    </ul>
+    <p>Ниже уровень текущей игры.</p> 
+    <p>Змейка зеленого цвета, мандаринка оранжевого.</p>
+      <button id="play-button" class="play-button">Играть</button>
+      <button class="returnToMainMenu" onclick="window.location.href='index.html'">Выйти</button>
+      
+    </div>
+  </div>
+  <div class="snowflakes" aria-hidden="true">
+
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+    <div class="snowflake">
+    ❅
+    </div>
+    <div class="snowflake">
+    ❆
+    </div>
+    <div class="snowflake">
+    ❄
+    </div>
+  </div>
+</body>
+</html>

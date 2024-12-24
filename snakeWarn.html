@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ВАЖНО - перед игрой</title>
+    <link rel="stylesheet" href="snakeWarn.css">
+</head>
+<body>
+    <img src="важно.png" alt="Важно">
+    <h1>Перед игрой</h1>
+    
+    <h2><strong>Процесс игры:</strong></h2>
+    <ul>
+        <li>Управление стрелочками.</li>
+        <li>Когда змейка врезается в стену, она выходит с противоположной стены.</li>
+        <li>Когда змейка кушает мандаринку, она возрастает на 1 пиксель.</li>
+    </ul>
+
+    <p>Начальная скорость: 2</p>
+
+    <h2>Уровни:</h2>
+    <ul>
+        <li><strong>Easy</strong> - начальный уровень, скорость 2.</li>
+        <li><strong>Normal</strong> - второй уровень. Для перехода на него нужно скушать 10 мандаринок. Скорость 3.</li>
+        <li><strong>Hard</strong> - третий уровень. Для перехода на него нужно скушать 22 мандаринки. Скорость 5.</li>
+        <li><strong>Hard+</strong> - четвертый уровень. С этого уровня змейке нельзя врезаться в саму себя,<br> иначе Вы проиграете. Для перехода на него нужно скушать 35 мандаринок. Скорость 6.</li>
+        <li><strong>Crazy</strong> - пятый уровень. Для перехода на него нужно скушать 50 мандаринок. Скорость 8.</li>
+    </ul>
+
+    <p>Чтобы считать игру пройденной, нужно скушать хотя бы 60 мандаринок. Это вполне возможно.</p>
+
+    <h2>Интерфейс:</h2>
+    <ul>
+        <li>В левом верхнем углу поля будет ваш счет за текущую игру/ и уровень за текущую игру.</li>
+    </ul>
+
+    <button id="returnButton" onclick="window.location.href='miniGames.html'">Назад</button> 
+    <button id="play-button" onclick="window.location.href='snakeGame.html'">Играть</button> 
+</body>
+</html>
